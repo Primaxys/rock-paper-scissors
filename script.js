@@ -1,3 +1,4 @@
+//  Computer Logic
 function getComputerChoice() {
   const randomVal = Math.random();
   if (randomVal < 0.33) {
@@ -9,6 +10,7 @@ function getComputerChoice() {
   }
 }
 
+// Human Logic
 function getHumanChoice() {
   let choices = window.prompt("Rock, Paper, Or Scissors?");
 
@@ -19,6 +21,17 @@ function getHumanChoice() {
   } else if (choices == "Scissors") {
     return "Scissors";
   } else {
-    return "Please select a one of them";
+    return "Please select one of the values provided.";
   }
 }
+
+// Score Variables
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
