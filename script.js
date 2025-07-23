@@ -10,5 +10,15 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-  let sign = window.prompt("Rock, Paper, Or Scissors?");
+  let choices = window.prompt("Rock, Paper, Or Scissors?");
+
+  if (choices == "Rock") {
+    return "Rock";
+  } else if (choices == "Paper") {
+    return "Paper";
+  } else if (choices == "Scissors") {
+    return "Scissors";
+  } else {
+    return "Please select a one of them";
+  }
 }
