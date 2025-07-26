@@ -55,7 +55,7 @@ function playGame() {
 
     // Lose Conditionals
     if (humanChoice === "rock" && computerChoice === "paper") {
-      console.log("You lose Paper  beats Rock");
+      console.log("You lose Paper beats Rock");
       computerScore++;
     } else if (humanChoice === "paper" && computerChoice === "scissors") {
       console.log("You lose Scissors beats Paper");
